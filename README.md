@@ -26,7 +26,7 @@ Hyperparameters and parameters related to pre-processing and data augmentation c
 
 ## Using Data Generators
 
-Using data augmentation before training the model can result in a huge amount of data, especially if numerous training/validation tasks are chosen, and some machines aren't able to support it. In that sense, you can try using the **-datagen** argument, which will use data generators to feed cropped data into the model while it's training.
+Using data augmentation before training the model can result in a huge amount of data, especially if numerous training/validation tasks are chosen, and some machines aren't able to support it. In that sense, you can try using the **--datagen** argument, which will use data generators to feed cropped data into the model while it's training.
 
 Firstly, you need to specify a folder path in the **processed_data_path** variable in the **EEG_biometric.py** file, where a folder named **processed_data** will be created (if it doesn't exist yet). When running the application, data from tasks that were not stored yet will be pre-processed and stored in .csv format, separated by task.
 
